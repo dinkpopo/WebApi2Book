@@ -51,3 +51,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+*.dll
+*.pdb
+*.txt
+*.txt
+*.config
+*.config
+*.config
+*.suo
+*.jfm
+src/WebApi2BookDb/bin/Debug/WebApi2BookDb_1.publish.sql
+*.dacpac
+*.txt
