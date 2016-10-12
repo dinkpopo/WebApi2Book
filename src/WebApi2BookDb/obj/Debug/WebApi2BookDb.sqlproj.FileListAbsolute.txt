@@ -12,7 +12,3 @@ D:\MyPractices\WebApi2Book\src\WebApi2BookDb\obj\Debug\postdeploy.sql
 D:\MyPractices\WebApi2Book\src\WebApi2BookDb\obj\Debug\predeploy.sql
 D:\MyPractices\WebApi2Book\src\WebApi2BookDb\obj\Debug\WebApi2BookDb.dll
 D:\MyPractices\WebApi2Book\src\WebApi2BookDb\obj\Debug\WebApi2BookDb.pdb
-C:\Projects\WebApi2Book\src\WebApi2BookDb\obj\Debug\Model.xml
-C:\Projects\WebApi2Book\src\WebApi2BookDb\obj\Debug\refactor.xml
-C:\Projects\WebApi2Book\src\WebApi2BookDb\obj\Debug\postdeploy.sql
-C:\Projects\WebApi2Book\src\WebApi2BookDb\obj\Debug\predeploy.sql
