@@ -2,7 +2,6 @@ C:\Projects\WebApi2Book\src\WebApi2Book.Data.Tests\bin\Debug\WebApi2Book.Data.Te
 C:\Projects\WebApi2Book\src\WebApi2Book.Data.Tests\bin\Debug\WebApi2Book.Data.Tests.pdb
 C:\Projects\WebApi2Book\src\WebApi2Book.Data.Tests\obj\Debug\WebApi2Book.Data.Tests.dll
 C:\Projects\WebApi2Book\src\WebApi2Book.Data.Tests\obj\Debug\WebApi2Book.Data.Tests.pdb
-C:\Projects\WebApi2Book\src\WebApi2Book.Data.Tests\obj\Debug\WebApi2Book.Data.Tests.csprojResolveAssemblyReference.cache
 D:\Projects\WebApi2Book\src\WebApi2Book.Data.Tests\bin\Debug\WebApi2Book.Data.Tests.dll
 D:\Projects\WebApi2Book\src\WebApi2Book.Data.Tests\bin\Debug\WebApi2Book.Data.Tests.pdb
 D:\Projects\WebApi2Book\src\WebApi2Book.Data.Tests\obj\Debug\WebApi2Book.Data.Tests.dll
