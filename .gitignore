@@ -68,3 +68,4 @@ src/WebApi2BookDb/obj/Debug/postdeploy.sql
 *.txt
 src/WebApi2BookDb/obj/Debug/Model.xml
 src/WebApi2BookDb/bin/Debug/WebApi2BookDb.dacpac
+src/.vs/config/applicationhost.config
