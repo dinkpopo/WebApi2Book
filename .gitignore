@@ -63,3 +63,8 @@ Temporary Items
 src/WebApi2BookDb/bin/Debug/WebApi2BookDb_1.publish.sql
 *.dacpac
 *.txt
+*.dacpac
+src/WebApi2BookDb/obj/Debug/postdeploy.sql
+*.txt
+src/WebApi2BookDb/obj/Debug/Model.xml
+src/WebApi2BookDb/bin/Debug/WebApi2BookDb.dacpac
