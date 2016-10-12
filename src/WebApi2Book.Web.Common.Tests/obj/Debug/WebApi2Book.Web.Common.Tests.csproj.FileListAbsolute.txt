@@ -2,3 +2,7 @@ C:\Projects\WebApi2Book\src\WebApi2Book.Web.Common.Tests\bin\Debug\WebApi2Book.W
 C:\Projects\WebApi2Book\src\WebApi2Book.Web.Common.Tests\bin\Debug\WebApi2Book.Web.Common.Tests.pdb
 C:\Projects\WebApi2Book\src\WebApi2Book.Web.Common.Tests\obj\Debug\WebApi2Book.Web.Common.Tests.dll
 C:\Projects\WebApi2Book\src\WebApi2Book.Web.Common.Tests\obj\Debug\WebApi2Book.Web.Common.Tests.pdb
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Common.Tests\bin\Debug\WebApi2Book.Web.Common.Tests.dll
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Common.Tests\bin\Debug\WebApi2Book.Web.Common.Tests.pdb
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Common.Tests\obj\Debug\WebApi2Book.Web.Common.Tests.dll
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Common.Tests\obj\Debug\WebApi2Book.Web.Common.Tests.pdb

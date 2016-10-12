@@ -3,3 +3,7 @@ C:\Projects\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\bin\Debug\WebAp
 C:\Projects\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\obj\Debug\WebApi2Book.Web.Api.IntegrationTests.dll
 C:\Projects\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\obj\Debug\WebApi2Book.Web.Api.IntegrationTests.pdb
 C:\Projects\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\obj\Debug\WebApi2Book.Web.Api.IntegrationTests.csprojResolveAssemblyReference.cache
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\bin\Debug\WebApi2Book.Web.Api.IntegrationTests.dll
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\bin\Debug\WebApi2Book.Web.Api.IntegrationTests.pdb
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\obj\Debug\WebApi2Book.Web.Api.IntegrationTests.dll
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\obj\Debug\WebApi2Book.Web.Api.IntegrationTests.pdb

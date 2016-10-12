@@ -12,3 +12,8 @@ D:\MyPractices\WebApi2Book\src\WebApi2BookDb\obj\Debug\postdeploy.sql
 D:\MyPractices\WebApi2Book\src\WebApi2BookDb\obj\Debug\predeploy.sql
 D:\MyPractices\WebApi2Book\src\WebApi2BookDb\obj\Debug\WebApi2BookDb.dll
 D:\MyPractices\WebApi2Book\src\WebApi2BookDb\obj\Debug\WebApi2BookDb.pdb
+D:\Projects\WebApi2Book\src\WebApi2BookDb\bin\Debug\WebApi2BookDb.dacpac
+D:\Projects\WebApi2Book\src\WebApi2BookDb\bin\Debug\WebApi2BookDb.dll
+D:\Projects\WebApi2Book\src\WebApi2BookDb\bin\Debug\WebApi2BookDb.pdb
+D:\Projects\WebApi2Book\src\WebApi2BookDb\obj\Debug\WebApi2BookDb.dll
+D:\Projects\WebApi2Book\src\WebApi2BookDb\obj\Debug\WebApi2BookDb.pdb
