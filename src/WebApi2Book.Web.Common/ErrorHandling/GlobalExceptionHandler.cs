@@ -7,10 +7,6 @@ namespace WebApi2Book.Web.Common.ErrorHandling
 {
     public class GlobalExceptionHandler : ExceptionHandler
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="context"></param>
         public override void Handle(ExceptionHandlerContext context)
         {
             var exception = context.Exception;
