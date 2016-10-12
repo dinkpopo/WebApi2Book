@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Status] (Table)
+       [dbo].[Task] (Table)
+       [dbo].[TaskUser] (Table)
+       [dbo].[TaskUser].[ix_TaskUser_UserId] (Index)
+       [dbo].[User] (Table)
+       Foreign Key: unnamed constraint on [dbo].[Task] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Task] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[TaskUser] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[TaskUser] (Foreign Key)
+
+** Supporting actions

@@ -1,0 +1,267 @@
+????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+NewTask -> Task
+WebApi2Book.Web.Api.Models.NewTask -> WebApi2Book.Data.Entities.Task
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at WebApi2Book.Common.TypeMapping.AutoMapperAdapter.Map[T](Object objectToMap) in C:\Projects\WebApi2Book\src\WebApi2Book.Common\TypeMapping\AutoMapperAdapter.cs:line 9
+   at WebApi2Book.Web.Api.MaintenanceProcessing.AddTaskMaintenanceProcessor.AddTask(NewTask newTask) in C:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\MaintenanceProcessing\AddTaskMaintenanceProcessor.cs:line 21
+   at WebApi2Book.Web.Api.Controllers.V1.TasksController.AddTask(HttpRequestMessage requestMessage, NewTask newTask) in C:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\Controllers\V1\TasksController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.Tracers.HttpControllerTracer.<ExecuteAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApi2Book.Web.Common.Security.UserSession.get_Username() in C:\Projects\WebApi2Book\src\WebApi2Book.Web.Common\Security\UserSession.cs:line 39
+   at lambda_method(Closure )
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at NHibernate.Impl.ExpressionProcessor.FindValue(Expression expression)
+   at NHibernate.Impl.ExpressionProcessor.ProcessSimpleExpression(Expression left, Expression right, ExpressionType nodeType)
+   at NHibernate.Impl.ExpressionProcessor.ProcessSimpleExpression(BinaryExpression be)
+   at NHibernate.Impl.ExpressionProcessor.ProcessBinaryExpression(BinaryExpression expression)
+   at NHibernate.Impl.ExpressionProcessor.ProcessExpression(Expression expression)
+   at NHibernate.Criterion.QueryOver`2.Add(Expression`1 expression)
+   at NHibernate.Criterion.QueryOver`2.NHibernate.IQueryOver<TRoot,TSubType>.Where(Expression`1 expression)
+   at WebApi2Book.Data.SqlServer.QueryProcessors.AddTaskQueryProcessor.AddTask(Task task) in C:\Projects\WebApi2Book\src\WebApi2Book.Data.SqlServer\QueryProcessors\AddTaskQueryProcessor.cs:line 29
+   at WebApi2Book.Web.Api.MaintenanceProcessing.AddTaskMaintenanceProcessor.AddTask(NewTask newTask) in C:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\MaintenanceProcessing\AddTaskMaintenanceProcessor.cs:line 23
+   at WebApi2Book.Web.Api.Controllers.V1.TasksController.AddTask(HttpRequestMessage requestMessage, NewTask newTask) in C:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\Controllers\V1\TasksController.cs:line 25
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.Tracers.HttpControllerTracer.<ExecuteAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__18`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      ????
+      
