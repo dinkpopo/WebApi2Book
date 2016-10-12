@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\DateTimeAdapter.cs" />
+    <Compile Include="BusinessRuleViolationException.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Interfaces\IDateTime.cs" />
     <Compile Include="Interfaces\ILogManager.cs" />
