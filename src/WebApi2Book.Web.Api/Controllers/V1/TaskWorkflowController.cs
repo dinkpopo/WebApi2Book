@@ -4,6 +4,7 @@ using WebApi2Book.Web.Api.MaintenanceProcessing;
 using WebApi2Book.Web.Api.Models;
 using WebApi2Book.Web.Common;
 using WebApi2Book.Web.Common.Routing;
+using WebApi2Book.Web.Common.Security;
 
 namespace WebApi2Book.Web.Api.Controllers.V1
 {
@@ -14,12 +15,15 @@ namespace WebApi2Book.Web.Api.Controllers.V1
     {
         private readonly IStartTaskWorkflowProcessor _startTaskWorkflowProcessor;
         private readonly ICompleteTaskWorkflowProcessor _completeTaskWorkflowProcessor;
+        private readonly IReactivateTaskWorkflowProcessor _reactivateTaskWorkflowProcessor;
 
         public TaskWorkflowController(IStartTaskWorkflowProcessor startTaskWorkflowProcessor,
-            ICompleteTaskWorkflowProcessor completeTaskWorkflowProcessor)
+            ICompleteTaskWorkflowProcessor completeTaskWorkflowProcessor,
+            IReactivateTaskWorkflowProcessor reactivateTaskWorkflowProcessor)
         {
             _startTaskWorkflowProcessor = startTaskWorkflowProcessor;
             _completeTaskWorkflowProcessor = completeTaskWorkflowProcessor;
+            _reactivateTaskWorkflowProcessor = reactivateTaskWorkflowProcessor;
         }
 
         [HttpPost]
@@ -35,6 +39,15 @@ namespace WebApi2Book.Web.Api.Controllers.V1
         public Task CompleteTask(long taskId)
         {
             var task = _completeTaskWorkflowProcessor.CompleteTask(taskId);
+            return task;
+        }
+
+        [HttpPost]
+        [UserAudit]
+        [Route("tasks/{taskId:long}/reactivations", Name = "ReactivateTaskRoute")]
+        public Task ReactivateTask(long taskId)
+        {
+            var task = _reactivateTaskWorkflowProcessor.ReactivateTask(taskId);
             return task;
         }
     }
