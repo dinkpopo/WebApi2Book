@@ -72,3 +72,10 @@ src/.vs/config/applicationhost.config
 src/CreateJwt/bin/Debug/CreateJwt.exe
 src/CreateJwt/bin/Debug/log4net.xml
 src/.vs/WebApi2Book/v14/.suo
+src/CreateJwt/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+src/WebApi2Book.Web.Api/bin/WebApi2Book.Web.Api.dll.config
+src/CreateJwt/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+src/WebApi2Book.Web.Api/obj/Debug/WebApi2Book.Web.Api.csproj.FileListAbsolute.txt
+src/WebApi2Book.Web.Api/obj/Debug/WebApi2Book.Web.Api.csproj.FileListAbsolute.txt
+src/WebApi2Book.Web.Api/obj/Debug/WebApi2Book.Web.Api.csproj.FileListAbsolute.txt
+src/WebApi2Book.Data/obj/Debug/WebApi2Book.Data.csproj.FileListAbsolute.txt
