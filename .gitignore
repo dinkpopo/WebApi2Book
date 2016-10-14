@@ -51,6 +51,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+bin/
+obj/
+
 *.pdb
 *.txt
 *.suo
