@@ -51,9 +51,11 @@
     <Compile Include="Adapters\DateTimeAdapter.cs" />
     <Compile Include="BusinessRuleViolationException.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="Interfaces\IDateTime.cs" />
     <Compile Include="Interfaces\ILogManager.cs" />
     <Compile Include="Adapters\LogManagerAdapter.cs" />
+    <Compile Include="PrimitiveTypeParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\IUserSession.cs" />
     <Compile Include="TypeMapping\AutoMapperAdapter.cs" />

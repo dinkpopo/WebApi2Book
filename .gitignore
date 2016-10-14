@@ -53,6 +53,7 @@ Temporary Items
 
 bin/
 obj/
+Debug/
 
 *.pdb
 *.txt

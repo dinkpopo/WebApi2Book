@@ -7,6 +7,7 @@ using WebApi2Book.Web.Api.MaintenanceProcessing;
 using WebApi2Book.Web.Api.Models;
 using WebApi2Book.Web.Common;
 using WebApi2Book.Web.Common.Routing;
+using WebApi2Book.Web.Common.Validation;
 
 namespace WebApi2Book.Web.Api.Controllers.V1
 {
@@ -29,6 +30,7 @@ namespace WebApi2Book.Web.Api.Controllers.V1
 
         [Route("", Name = "AddTaskRoute")]
         [HttpPost]
+        [ValidateModel]
         [Authorize(Roles = Constants.RoleNames.Manager)]
         public IHttpActionResult AddTask(HttpRequestMessage requestMessage, NewTask newTask)
         {
@@ -47,6 +49,7 @@ namespace WebApi2Book.Web.Api.Controllers.V1
         [Route("{id:long}", Name = "UpdateTaskRoute")]
         [HttpPut]
         [HttpPatch]
+        [ValidateTaskUpdateRequest]
         [Authorize(Roles = Constants.RoleNames.SeniorWorker)]
         public Task UpdateTask(long id, [FromBody] object updatedTask)
         {
