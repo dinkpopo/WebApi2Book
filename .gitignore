@@ -55,9 +55,6 @@ Temporary Items
 *.pdb
 *.txt
 *.txt
-*.config
-*.config
-*.config
 *.suo
 *.jfm
 src/WebApi2BookDb/bin/Debug/WebApi2BookDb_1.publish.sql
