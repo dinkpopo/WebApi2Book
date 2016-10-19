@@ -1,5 +1,6 @@
 ﻿using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using WebApi2Book.Common;
 using WebApi2Book.Data.QueryProcessors;
 using WebApi2Book.Web.Api.InquiryProcessing;
@@ -14,6 +15,7 @@ namespace WebApi2Book.Web.Api.Controllers.V1
     [ApiVersion1RoutePrefix("tasks")]
     [UnitOfWorkActionFilter]
     [Authorize(Roles = Constants.RoleNames.JuniorWorker)]
+    [EnableCors("http://localhost:52976", "*", "*")]
     public class TasksController : ApiController
     {
         private readonly IAddTaskMaintenanceProcessor _addTaskMaintenanceProcessor;
@@ -22,17 +24,15 @@ namespace WebApi2Book.Web.Api.Controllers.V1
         private readonly IPagedDataRequestFactory _pagedDataRequestFactory;
         private readonly IAllTasksInquiryProcessor _allTasksInquiryProcessor;
 
-        public TasksController(IAddTaskMaintenanceProcessor addTaskMaintenanceProcessor,
-            ITaskByIdInquiryProcessor taskByIdInquiryProcessor,
-            IUpdateTaskMaintenanceProcessor updateTaskMaintenanceProcessor,
-            IPagedDataRequestFactory pagedDataRequestFactory,
-             IAllTasksInquiryProcessor allTasksInquiryProcessor)
+        public TasksController(ITasksControllerDependencyBlock tasksControllerDependencyBlock)
         {
-            _addTaskMaintenanceProcessor = addTaskMaintenanceProcessor;
-            _taskByIdInquiryProcessor = taskByIdInquiryProcessor;
-            _updateTaskMaintenanceProcessor = updateTaskMaintenanceProcessor;
-            _pagedDataRequestFactory = pagedDataRequestFactory;
-            _allTasksInquiryProcessor = allTasksInquiryProcessor;
+            _addTaskMaintenanceProcessor =
+                tasksControllerDependencyBlock.AddTaskMaintenanceProcessor;
+            _allTasksInquiryProcessor = tasksControllerDependencyBlock.AllTasksInquiryProcessor;
+            _pagedDataRequestFactory = tasksControllerDependencyBlock.PagedDataRequestFactory;
+            _taskByIdInquiryProcessor = tasksControllerDependencyBlock.TaskByIdInquiryProcessor;
+            _updateTaskMaintenanceProcessor =
+                tasksControllerDependencyBlock.UpdateTaskMaintenanceProcessor;
         }
 
         [Route("", Name = "AddTaskRoute")]

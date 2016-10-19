@@ -118,6 +118,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -127,6 +131,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Http.Tracing">
       <HintPath>..\..\lib\Microsoft.AspNet.WebApi.Tracing.5.2.3\lib\net45\System.Web.Http.Tracing.dll</HintPath>
       <Private>True</Private>
@@ -177,7 +185,9 @@
     <Compile Include="AutoMappingConfiguration\TaskEntityToTaskAutoMapperTypeConfigurator.cs" />
     <Compile Include="AutoMappingConfiguration\UserEntityToUserAutoMapperTypeConfigurator.cs" />
     <Compile Include="AutoMappingConfiguration\UserToUserEntityAutoMapperTypeConfigurator.cs" />
+    <Compile Include="Controllers\V1\ITasksControllerDependencyBlock.cs" />
     <Compile Include="Controllers\V1\TasksController.cs" />
+    <Compile Include="Controllers\V1\TasksControllerDependencyBlock.cs" />
     <Compile Include="Controllers\V1\TaskUsersController.cs" />
     <Compile Include="Controllers\V1\TaskWorkflowController.cs" />
     <Compile Include="Controllers\V2\TasksController.cs" />
@@ -189,6 +199,12 @@
     <Compile Include="InquiryProcessing\ITaskByIdInquiryProcessor.cs" />
     <Compile Include="InquiryProcessing\PagedDataRequestFactory.cs" />
     <Compile Include="InquiryProcessing\TaskByIdInquiryProcessor.cs" />
+    <Compile Include="LinkServices\CommonLinkService.cs" />
+    <Compile Include="LinkServices\ICommonLinkService.cs" />
+    <Compile Include="LinkServices\ITaskLinkService.cs" />
+    <Compile Include="LinkServices\IUserLinkService.cs" />
+    <Compile Include="LinkServices\TaskLinkService.cs" />
+    <Compile Include="LinkServices\UserLinkService.cs" />
     <Compile Include="MaintenanceProcessing\AddTaskMaintenanceProcessor.cs" />
     <Compile Include="MaintenanceProcessing\CompleteTaskWorkflowProcessor.cs" />
     <Compile Include="MaintenanceProcessing\IAddTaskMaintenanceProcessor.cs" />

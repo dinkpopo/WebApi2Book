@@ -138,3 +138,9 @@ D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.Web.Http.WebHost.xml
 D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\obj\Debug\WebApi2Book.Web.Api.csprojResolveAssemblyReference.cache
 D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\obj\Debug\WebApi2Book.Web.Api.dll
 D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\obj\Debug\WebApi2Book.Web.Api.pdb
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\bin\JwtAuthForWebAPI.dll
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.Web.Cors.dll
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.Web.Http.Cors.dll
+D:\Projects\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.Web.Http.Cors.xml
